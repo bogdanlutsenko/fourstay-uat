@@ -18,7 +18,7 @@ public class HomePageStepDefs {
 	@Given("^the user is on fourstay home page$")
 	public void the_user_is_on_fourstay_home_page() throws Throwable {
 		Driver.getInstance().get(ConfigurationReader.getProperty("url"));
-		
+
 	}
 
 	@When("^the user clicks on the login link$")

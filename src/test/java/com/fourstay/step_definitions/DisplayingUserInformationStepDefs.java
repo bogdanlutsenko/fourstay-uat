@@ -5,10 +5,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
 import org.junit.Assert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-
 import com.fourstay.pages.AccountPage;
 import com.fourstay.pages.HomePage;
 import com.fourstay.pages.LoginPage;
@@ -16,7 +15,6 @@ import com.fourstay.pages.SearchResultsPage;
 import com.fourstay.utilities.BrowserUtilities;
 import com.fourstay.utilities.ConfigurationReader;
 import com.fourstay.utilities.Driver;
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -33,7 +31,9 @@ public class DisplayingUserInformationStepDefs {
 		Driver.getInstance().get(ConfigurationReader.getProperty("url"));
 		Driver.getInstance().manage().window().maximize();
 		loginPage.loginButton.click();
-
+				
+		
+		
 	}
 
 	@Given("^I enter email \"([^\"]*)\"$")

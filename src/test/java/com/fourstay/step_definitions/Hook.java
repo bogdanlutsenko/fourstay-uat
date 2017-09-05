@@ -17,12 +17,8 @@ public class Hook {
 	public void setUp() throws SQLException {
 		Driver.getInstance().manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 		
-		
 	}
 
-	
-
-	
 	
 	@After
 	public void tearDown(Scenario scenario) {
