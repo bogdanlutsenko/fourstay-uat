@@ -5,11 +5,11 @@ import org.junit.Assert;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.Alert;
 import com.fourstay.pages.AccountPage;
 import com.fourstay.pages.LoginPage;
 import com.fourstay.utilities.ConfigurationReader;
 import com.fourstay.utilities.Driver;
+import com.google.common.base.Verify;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -36,6 +36,8 @@ public class LoginForDiferentUsersStepDefs {
 		loginPage.emailField.sendKeys(ConfigurationReader.getProperty("host.username"));
 		loginPage.passwordField.sendKeys(ConfigurationReader.getProperty("host.password"));
 		loginPage.loginButtonPopUp.click();
+		
+		//Verify.verify(expression);
 
 	}
 
