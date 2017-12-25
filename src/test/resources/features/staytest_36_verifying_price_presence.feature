@@ -1,4 +1,4 @@
-@smoke
+
 Feature: Search for stay for price presence 
 	As a guest I should be able to see prices on the stay
 	     So that stay meets my price requirements

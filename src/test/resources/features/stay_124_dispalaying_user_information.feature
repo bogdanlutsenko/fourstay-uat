@@ -15,7 +15,7 @@ Scenario: Verify host user information
 	When I click on the login button 
 	Then the user name should be "Amy Fowler" 
 	
-@Staytest_124 
+
 Scenario Outline: Verify host user information 
 	And I enter email "<email>" 
 	And I enter password "<password>" 

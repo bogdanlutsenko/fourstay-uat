@@ -30,6 +30,7 @@ public class LoginForDiferentUsersStepDefs {
 		//Driver.getInstance().findElement(By.cssSelector("div.intercom-gradient")).click();
 		loginPage.closeIframe.click();
 		loginPage.closeIframe.click();
+		
 		Driver.getInstance().switchTo().defaultContent();
 		loginPage.loginButton.click();
 		Thread.sleep(2000);

@@ -2,7 +2,7 @@ Feature: Search for stay for price presence
 	As a new user, I should be able to see my 
 	     information displayed correctly on the user profile page.
 
-@SpecificDate2
+
 Scenario: User's name information should be displayed correctly 
 	Given the user is on the FourStay sign up dialog 
 	And the user enters enter first name "Albert" and last name "Einstein" 

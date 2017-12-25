@@ -1,7 +1,7 @@
- Feature: Search for stay for specified dates 
+Feature: Search for stay for specified dates 
 	As a user I should be able to search stay for the a specified date range 
 		So that the result lists only stays that are available of those days
-@SpecificDate1 
+
 Scenario: 
 	Verify there should not be results wnich not meeting the searching criteria 
 	Given I am on the fourstay homepage 

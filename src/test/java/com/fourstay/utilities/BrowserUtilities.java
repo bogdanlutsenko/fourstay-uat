@@ -1,10 +1,22 @@
 package com.fourstay.utilities;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BrowserUtilities {
+	public static String getCurrentTime(){
+		DateFormat dateFormat = new SimpleDateFormat("MMddyyyyHHmmss");
+		Date date=new Date();
+		String date1=dateFormat.format(date);
+		return date1;
+		
+		
+	}
 
 	public static void waitForPageLoad() {
 		WebDriverWait wait = new WebDriverWait(Driver.getInstance(), 60);
